@@ -160,7 +160,7 @@
                                        
                                     </div>
 
-                                    <div align="center" class="form-group">
+                                    <div class="form-group">
                                         <div class="custom-control custom-checkbox">
                                             <label class="container_check">Mostrar contraseñas
                                                 <input type="checkbox" onclick="mostrarPass()">
@@ -173,7 +173,7 @@
                                         <a href="#" target="_blank"> Leer Términos y condiciones </a>
                                     </div>
 
-                                    <div align="center" class="form-group">
+                                    <div class="form-group">
                                         <div class="custom-control custom-checkbox">
                                             <label class="container_check">Confirmo que he leído y aceptado los términos y condiciones
                                                 <input type="checkbox" id="myCheck" onclick="terminos()">
@@ -198,11 +198,11 @@
 
                                     <div class="mt-2">
                                         <div class="d-flex justify-content-center links">
-                                            ¿Ya tienes una cuenta? <a style="font-weight: bold;" href="{{url('/')}}" onclick="return myFunction();" class="ml-2">Ingresa aquí</a>
+                                            ¿Ya tienes una cuenta? <a style="font-weight: bold;" href="{{url('/')}}" onclick="return myFunction();" class="ml-2">Click aquí</a>
                                         </div>
                                         <div class="d-flex justify-content-center links">
                                             <a style="font-weight: bold;" href="{{ route('password.request') }}" onclick="return myFunction();">
-                                                    ¿Olvidaste la contraseña?
+                                                    ¿Olvidaste tu contraseña?
                                             </a>
                                         </div>
                                     </div>

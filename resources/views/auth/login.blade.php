@@ -71,7 +71,7 @@
 
                                     @if ($errors->has('email'))
                                     <span >
-                                        <strong style="color:white; padding-bottom:10px;">{{ $errors->first('email') }}</strong>
+                                        <strong style="color:white; padding-bottom:8px;">{{ $errors->first('email') }}</strong>
                                     </span>
                                      @endif
 
@@ -89,7 +89,7 @@
 
                                 @if ($errors->has('password'))
                                 <span >
-                                            <strong style="color:white; padding-bottom:10px;">{{ $errors->first('password') }}</strong>
+                                            <strong style="color:white; padding-bottom:8px;">{{ $errors->first('password') }}</strong>
                                 </span>
                                     @endif
 
@@ -101,7 +101,7 @@
                                    
                                   
                             </div>
-                            <div align="center" class="form-group">
+                            <div class="form-group">
                                 <div class="custom-control custom-checkbox">
                                  
 
