@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Recuperar contraseña - PlanPro</title>
+    <title>AD-PLAN | Recuperar contraseña</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- carousel CSS -->
-    
+
 
     <!--header icon CSS -->
     <link rel="icon" href="{{ asset('frontend/images/icon.png') }}">
@@ -35,31 +35,31 @@
 
         <div class="loader"></div>
 
-    
+
 
 
 
     <!--welcome area start-->
     <div class="welcome-area" id="home">
-       
+
         <div class="container banner2">
 
-           
+
           <div class="row">
-    
+
 
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    
+
                 </div>
 
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                        
+
 
             <div class="user_card">
                     <div class="d-flex justify-content-center">
                         <div class="brand_logo_container">
                             <a href="{{url('/')}}" title="Ir al inicio" onclick="return myFunction();">  <img src="{{url('frontend/images/redondo.png')}}" class="brand_logo" alt="Logo"> </a>
-                        </div> 
+                        </div>
                     </div>
                     <div class="d-flex justify-content-center form_container">
 
@@ -76,25 +76,19 @@
                           </span>
                            @endif
 
-                         
-            
+
+
                           <div  class="input-group mb-3{{ $errors->has('email') ? ' has-error' : '' }}">
-                         
-        
+
                               <span  class="input-group-text"><i class="fas fa-envelope"></i></span>
                             <input autocomplete="off" oninvalid="this.setCustomValidity('Se requiere que ingrese su email')" placeholder="Ingrese su Email" oninput="this.setCustomValidity('')"  id="email" type="email" class="form-control" name="email"  value="{{ old('email') }}" required autofocus>
-                          
-                           
-                            
-                                
-        
-        
+
                           </div>
-        
-        
-                         
-                     
-        
+
+
+
+
+
                           <div class="d-flex justify-content-center login_container" style="margin-bottom:25px">
                               <button type="submit" name="button" class="btn login_btn">Enviar Link</button>
                           </div>
@@ -103,49 +97,49 @@
 
                           <div class="mt-2">
                               <div class="d-flex justify-content-center links">
-                                 ¿No tienes una cuenta? <a href="{{ route('register') }}" onclick="return myFunction();" class="ml-2">Regístrate aqui</a>
+                                 ¿No tienes una cuenta PLAN? <a style="font-weight: bold; color: #4d4d4d; href="{{ route('register') }}" onclick="return myFunction();" class="ml-2">Regístrate aqui</a>
                               </div>
-                              
+
                           </div>
 
                           <div class="mt-2">
                               <div class="d-flex justify-content-center links">
-                                 ¿Ya tienes una cuenta? <a href="{{ route('login') }}" onclick="return myFunction();" class="ml-2">Inicia sesión aqui</a>
+                                 ¿Ya tienes una cuenta PLAN? <a style="font-weight: bold; color: #4d4d4d; href="{{ route('login') }}" onclick="return myFunction();" class="ml-2">Inicia sesión aqui</a>
                               </div>
-                              
+
                           </div>
 
                           <div class="mt-2">
                               <div class="d-flex justify-content-center links">
-                                 <a style="color:white" href="{{url('/')}}" class="ml-2" onclick="return myFunction();">Regresar al Inicio</a>
+                                 <a style="color:white; " href="{{url('/')}}" class="ml-2" onclick="return myFunction();">Regresar al Inicio</a>
                               </div>
-                              
+
                           </div>
-        
+
                         </form>
                         <!-- Form -->
 
 
 
 
-                   
+
                     </div>
 
             </div>
 
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    
+
                 </div>
 
             </div>
-            
+
         </div>
     </div>
     <!--welcome area end-->
 
 
 
- 
+
 
     <!-- jquery 2.2.4 js-->
     <script src="{{url('frontend/js/jquery-2.2.4.min.js')}}"></script>
@@ -175,12 +169,12 @@
           button: "ok",
         });
 
-    
+
 
       </script>
 
-      
-        
+
+
     @endif
     <!-- main js-->
     <script src="{{url('frontend/js/main.js')}}"></script>
@@ -193,15 +187,15 @@
     </script>
 
 <script type="text/javascript">
-   
-    $(window).on('load', function(){ 
+
+    $(window).on('load', function(){
         $(".loader").fadeOut("slow");
 
     });
 
     function myFunction() {
             $(".loader").show();
-       
+
         }
 
     </script>
