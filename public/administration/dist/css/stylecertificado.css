@@ -1,0 +1,120 @@
+a {
+  color: #5D6975;
+  text-decoration: underline;
+}
+p{
+  padding: 0px;
+  margin: 0px;
+}
+
+.nombre{
+    margin: 305px 0px 0px 480px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-weight:bold;
+}
+.evento{
+  margin: 38px 0px 0px 683px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  font-weight:bold;
+
+}
+.caja-fecha{
+  width: 600px;
+  position: relative;
+  height: 40px;
+}
+
+.caja-fecha-inicial{
+  margin: 5px 0px 0px 438px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight:bold;
+  height: 25px;
+  width: 130px;
+  position: absolute;
+
+
+}
+.caja-fecha-final{
+  margin: 5px 0px 0px 630px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight:bold;
+  height: 25px;
+  position: absolute;
+
+}
+.hora{
+  margin: 5px 0px 0px 425px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight:bold;
+  height: 30px;
+}
+.date{
+  margin: 30px 0px 0px 533px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  font-weight:bold;
+  height: 30px;
+}
+
+
+
+.primera{
+  display: inline-block;
+
+  padding: 0px 30px 0px 350px;
+  width: 100px;
+}
+.segunda{
+  display: inline-block;
+
+  padding: 0px 30px 0px 100px;
+  width: 100px;
+}
+
+.tercera{
+  display: inline-block;
+
+  padding: 0px 30px 0px 100px;
+  width: 100px;
+}
+
+.primera-nombre{
+
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight:bold;
+  display: inline-block;
+
+  padding: 0px 10px 0px 305px;
+  width: 200px;
+}
+.segunda-nombre{
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight:bold;
+  display: inline-block;
+
+  padding: 0px 30px 0px 20px;
+  width: 200px;
+}
+
+.tercera-nombre{
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight:bold;
+  display: inline-block;
+
+  padding: 0px 30px 0px 15px;
+  width: 200px;
+}
+
+
+
+
+
+

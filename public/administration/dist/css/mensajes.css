@@ -1,0 +1,80 @@
+.aprobado{
+
+    background-color: #E9FCFA;
+    border: 1px dashed #006600;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.rechazado{
+
+    background-color: #ff4040;
+
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.disabled {
+    pointer-events:none; 
+    opacity:0.6;        
+}
+
+.loader2 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background: url(https://res.cloudinary.com/dmsdzouoo/image/upload/v1566314673/loading_kxxa4p.gif) 50% 50% no-repeat #000000;
+    opacity: .9;
+  }
+
+
+  .loader3 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background: url(https://res.cloudinary.com/dmsdzouoo/image/upload/v1568316169/cargando_zsq8js.gif) 50% 50% no-repeat #000000;
+    opacity: .9;
+  }
+
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    top: 50px;
+    left: 0;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+ 

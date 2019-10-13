@@ -11,6 +11,7 @@ class HomeController extends Controller
     {
         $this->middleware('auth');
         \App::setLocale ('es');
+
     }
 
     /**
@@ -18,8 +19,9 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function administracion()
     {
-        return view('home');
+        return view('administracion.index');
     }
+
 }
