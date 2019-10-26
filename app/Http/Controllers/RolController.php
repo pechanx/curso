@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
-use DataTables; 
+use DataTables;
 use App\Rol;
 
 class RolController extends Controller
@@ -16,9 +16,9 @@ class RolController extends Controller
      */
     public function index()
     {
-         // $usuarios = Rol::where('estado',1)->orderBy('id')->get();   
-        $roles = Rol::where('estado',1)->orderBy('id')->get();     
-         
+         // $usuarios = Rol::where('estado',1)->orderBy('id')->get();
+        $roles = Rol::where('estado',1)->orderBy('id')->get();
+
         return View('administracion.roles.index',compact('roles')); // a lado de roles puedo agregar otro como usuarios
     }
 
@@ -46,8 +46,8 @@ class RolController extends Controller
             'rol' =>  $request->rol,
             'descripcion' =>  $request->descripcion,
             'fecha_registro' =>  $request->fecha_registro,
-      
-        
+
+
         ]);
 
         return Redirect::to('administracion/roles')->with('mensaje-registro', 'El rol.-  '.  $request->rol . '  -.se registro correctamente');
@@ -88,7 +88,7 @@ class RolController extends Controller
     public function update(Request $request, $id)
     {
 
-     
+
         $rol = Rol::find($id);
 
         $rol->fill([
@@ -99,14 +99,14 @@ class RolController extends Controller
 
        ]);
 
-           
+
        if($rol->save()){
         return Redirect::to('administracion/roles')->with('mensaje-registro', 'El rol- '.  $request->rol . ' -se actualizo correctamente');
        }
        else
        {
         return Redirect::to('administracion/roles')->with('mensaje-registro', 'Ocurrio un error al hacer la actualizacion');
-       
+
 
        }
     }
@@ -122,10 +122,11 @@ class RolController extends Controller
         $rol->estado = 0;
         $rol->save();
 
+        DB::table('user_rol')->where('rol_id', $rol->id)->delete();
         $message = "Eliminado Correctamente";
         if ($request->ajax()) {
             return response()->json([
-               
+
                 'message' => $message
             ]);
         }
@@ -134,25 +135,25 @@ class RolController extends Controller
     public function roles_ajax(Request $request)
     {
 
-              // select * from rol where estado=1           
+              // select * from rol where estado=1
             $roles = Rol::where('estado',1)->get();
            // o tambien esta parte $roles = DB::select("select * from rol where estado=1")
 
             return Datatables::of($roles)
                     ->addIndexColumn()
                     ->setRowId('id')  // campo para busqueda con el id se le puede cambiar por cedula ejmplo
-              
+
                     ->addColumn('accion', function($row){
 
                         $url = route('roles.edit',['parameters' => $row->id]);
-   
+
                            $btn = '<a title="Editar" style="cursor:pointer;" href="'.$url. '" role="button"><i class="fa fa-edit"></i></a> <a title="Eliminar" style="cursor:pointer;"   onclick="eliminar_rol('.$row->id.')" class="btn-delete" role="button"><i class="fa fa-trash"></i></a>';
-     
+
                             return $btn;
                     })
                     ->rawColumns(['accion'])
                     ->make(true);
-    
+
     }
 
 }

@@ -43,7 +43,7 @@ css list:
         ------------------
         --community v2 area css
         -----------------------
-    
+
 ==========================
 14:blog page css
 ==========================
@@ -97,43 +97,43 @@ input, textarea{
   color: #fff;
 }
 
-a.gradient-btn:hover:after, 
+a.gradient-btn:hover:after,
 a.gradient-btn:after,
-.single-details a,  
-.single-details a:hover, 
-.about-area.v2::after, 
-.slicknav_nav a:hover, 
-.slicknav_nav .slicknav_row, .slicknav_nav a, 
-.single-footer li a, 
-.single-footer li a:hover,  
-.single-community i, 
-.single-community i:hover, 
-.gradient-btn.apps-btn.apps-btn-2, 
-.gradient-btn.apps-btn.apps-btn-2:hover, 
-.faq-area .owl-nav div, 
-.faq-area .owl-nav div:hover, 
-.readmore-btn, 
-.readmore-btn i, 
-.readmore-btn:hover, 
-.single-team-social li a:hover, 
-.single-team-social li a:hover i, 
- .single-team-social a i, 
-.single-team-social li a, 
-.roadmap-area .owl-nav div,   
-.roadmap-area .owl-nav div:hover,  
-.single-document:hover, 
-.single-document:hover .single-document-text span, 
-.document-flag img, 
-.single-ico a:hover, 
-.ico-heading h1 a, 
-.ico-heading h1 a:hover, 
-.main-menu li ul, 
-.header-area, 
-.main-menu li:hover ul,  
-.main-menu li ul li a:hover, 
-a.single-about:hover, 
+.single-details a,
+.single-details a:hover,
+.about-area.v2::after,
+.slicknav_nav a:hover,
+.slicknav_nav .slicknav_row, .slicknav_nav a,
+.single-footer li a,
+.single-footer li a:hover,
+.single-community i,
+.single-community i:hover,
+.gradient-btn.apps-btn.apps-btn-2,
+.gradient-btn.apps-btn.apps-btn-2:hover,
+.faq-area .owl-nav div,
+.faq-area .owl-nav div:hover,
+.readmore-btn,
+.readmore-btn i,
+.readmore-btn:hover,
+.single-team-social li a:hover,
+.single-team-social li a:hover i,
+ .single-team-social a i,
+.single-team-social li a,
+.roadmap-area .owl-nav div,
+.roadmap-area .owl-nav div:hover,
+.single-document:hover,
+.single-document:hover .single-document-text span,
+.document-flag img,
+.single-ico a:hover,
+.ico-heading h1 a,
+.ico-heading h1 a:hover,
+.main-menu li ul,
+.header-area,
+.main-menu li:hover ul,
+.main-menu li ul li a:hover,
+a.single-about:hover,
 .header-area.header-absolate.skrollable.skrollable-after,
-a.single-about, 
+a.single-about,
 .main-menu li ul li a
  {
   -webkit-transition: all .3s;
@@ -182,7 +182,7 @@ a.single-about,
 
   color: #fff;
   border-bottom: solid;
-  
+
 }
 
 
@@ -1070,10 +1070,10 @@ community area css
   height: 50px;
   color: #fff;
   font-size: 24px;
-  background: #f09433; 
-background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: #f09433;
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
   text-align: center;
   line-height: 50px;
@@ -1487,7 +1487,7 @@ blog page css
   padding: 150px 0;
   font-size: 18px;
   text-transform: capitalize;
-  
+
 }
 .welcome-header a{
   -webkit-transition: all .3s;
@@ -1733,7 +1733,7 @@ a.single-blog-top:hover {
   float: right;
 }
 
-.single-blog-contact input, 
+.single-blog-contact input,
 .single-blog-contact textarea{
   border: 1px solid #163fcb;
   padding: 10px;
@@ -1818,7 +1818,7 @@ a.gradient-btn {
   position: relative;
   z-index: 2;
   text-align: center;
-    
+
 }
 
 a.gradient-btn:after {
@@ -1861,13 +1861,13 @@ a.gradient-btn:hover:after{
 
 /*===================================== end =================================*/
 
-/* 
+/*
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
 
 @media (min-width: 1281px) {
-  
+
  .banner{
   padding-top: 130px;
   padding-bottom: 125px;
@@ -1880,7 +1880,7 @@ a.gradient-btn:hover:after{
 
  .banner2{
   padding-top: 130px;
-  
+
  }
 
  .top-label{
@@ -1911,16 +1911,16 @@ a.gradient-btn:hover:after{
 }
 
 
-  
+
 }
 
-/* 
+/*
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
+
   .banner{
     padding-top: 130px;
     padding-bottom: 125px;
@@ -1944,7 +1944,7 @@ a.gradient-btn:hover:after{
     padding-top: 85px;
     padding-bottom: 25px;
    }
-  
+
 
    #texto-top{
     padding-top: 170px;
@@ -1960,18 +1960,18 @@ a.gradient-btn:hover:after{
 
   .banner2{
     padding-top: 100px;
-    
+
    }
-  
+
 }
 
-/* 
+/*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
+
   .banner{
     padding-top: 130px;
     padding-bottom: 125px;
@@ -2004,7 +2004,7 @@ a.gradient-btn:hover:after{
     padding-top: 85px;
     padding-bottom: 25px;
    }
-  
+
 
    .main-menu li a.desaparece {
     display: block;
@@ -2014,16 +2014,16 @@ a.gradient-btn:hover:after{
     text-transform: capitalize;
     display:none;
   }
-  
+
 }
 
-/* 
+/*
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
+
   .banner{
     padding-top: 130px;
     padding-bottom: 125px;
@@ -2057,7 +2057,7 @@ a.gradient-btn:hover:after{
     padding-top: 85px;
     padding-bottom: 25px;
    }
-  
+
 
    .main-menu li a.desaparece {
     display: block;
@@ -2067,10 +2067,10 @@ a.gradient-btn:hover:after{
     text-transform: capitalize;
     display:none;
   }
-  
+
 }
 
-/* 
+/*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
@@ -2086,7 +2086,7 @@ a.gradient-btn:hover:after{
     padding-top: 0px;
     font-size: 25px;
    }
-  
+
   .banner{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -2110,7 +2110,7 @@ a.gradient-btn:hover:after{
     padding-top: 70px;
     padding-bottom: 15px;
    }
-  
+
 
    .main-menu li a.desaparece {
     display: block;
@@ -2120,10 +2120,10 @@ a.gradient-btn:hover:after{
     text-transform: capitalize;
     display:block;
   }
-  
+
 }
 
-/* 
+/*
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
@@ -2139,7 +2139,7 @@ a.gradient-btn:hover:after{
     padding-top: 0px;
     font-size: 25px;
    }
-  
+
   .banner{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -2157,7 +2157,7 @@ a.gradient-btn:hover:after{
     padding-bottom: 15px;
    }
 
-   
+
    .banner4{
     padding-top: 70px;
     padding-bottom: 15px;
@@ -2171,7 +2171,7 @@ a.gradient-btn:hover:after{
     text-transform: capitalize;
     display:block;
   }
-  
+
 }
 
 
@@ -2195,7 +2195,8 @@ a.gradient-btn:hover:after{
 /* The container */
 .container_check {
   display: block;
-  position: relative;
+  position:relative;
+
   padding-left: 35px;
   cursor: pointer;
   font-size: 15px;

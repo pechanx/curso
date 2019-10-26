@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Curso Web | Dashboard</title>
+    <title>AD-Curso Web | Dashboard</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="{{url('administration/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{url('administration/css/font-face.css')}}">
-    
+
     <link rel="stylesheet" href="{{url('administration/fonts/font-awesome.min.css')}}">
 
     <link rel="stylesheet" href="{{url('administration/fonts/ionicons.min.css')}}">
@@ -28,27 +28,28 @@
     <link rel="stylesheet" href="{{url('administration/dist/css/alertify.css')}}">
     <link rel="stylesheet" href="{{url('administration/dist/css/morris.css')}}">
 
-   
-    <link rel="shortcut icon" type="image/png" href="{{ asset('imagenes/favicon.png') }}">
+
+    <link rel="shortcut icon" type="image/*" href="{{ asset('imagenes/favicon.png') }}">
 
     <link rel="stylesheet" href="{{url('administration/css/style.css')}}">
 
+    <link rel="stylesheet" href="{{url('administration/js/validaNumerosLetras.js')}}">
 
     @yield('estilos')
 </head>
 <body class="hold-transition skin-blue sidebar-mini agregar-scroll " style="background: #ecf0f5 !important;">
 
- 
+
 <div class="loader"></div>
 <div id="loader2" class="loader2" style="display: none;"></div>
 <div id="loader3" class="loader3" style="display: none;"></div>
 <div class="wrapper" id="contenido_principal">
 
     <header class="main-header">
- 
-        
+
+
         <nav class="navbar navbar-static-top" role="navigation">
-        
+
             <!-- Sidebar toggle button-->
             <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                 <span class="sr-only">Navegación</span>
@@ -57,33 +58,33 @@
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
 
-      
-           
+
+
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            
-                            
+
+
                             <span class="hidden-xs">{!! Auth::user()->name !!}</span>
-                    
-                                
+
+
                                     <img src="{{url('imagenes/no-avatar.png')}}" class="user-image" alt="MI Foto"  />
-                                
-                                
-                           
-                            
-                            
+
+
+
+
+
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
 
-                            
-                                
+
+
                                     <td>
                                         <img src="{{url('imagenes/no-avatar.png')}}" class="img-circle" alt="User Image"/>
                                     </td>
-                               
+
 
                                 <p>
                                    {!! Auth::user()->name !!}
@@ -96,7 +97,7 @@
                                 <div class="pull-right">
                                             <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();" 
+                                                     document.getElementById('logout-form').submit();"
                                                      class="btn btn-default btn-flat">
                                             Salir
                                         </a>
@@ -113,7 +114,7 @@
 
         </nav>
 
-        
+
     </header>
     <!-- Left side column. contains the logo and sidebar -->
     <aside class="main-sidebar">
@@ -122,21 +123,21 @@
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="image" align="center">
-        
+
                      <td>
                         <img src="{{url('imagenes/no-avatar.png')}}" class="img-circle" alt="User Image"/>
                     </td>
-                
-                
+
+
                 </div>
                 <div class="info" style="text-align: center; padding-top: 10px">
                 <a href="#" onclick="return myFunction();">
                         <p style="font-size: 20px">{!! Auth::user()->name !!}</p></a>
-        
-                </a>  
-               
-               
-               
+
+                </a>
+
+
+
                 </div>
             </div>
 
@@ -164,6 +165,19 @@
                     </ul>
                   </li>
 
+                  <li class="treeview">
+                    <a href="#">
+                      <i class="fa fa-user"></i>
+                      <span>Usuarios</span>
+                      <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                      </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="{{ route ('usuarios.index') }}"><i class="fa fa-circle-o"></i> Listado</a></li>
+                        <li><a href="{{ route ('usuarios.create') }}"><i class="fa fa-circle-o"></i> Agregar</a></li>
+                    </ul>
+                  </li>
 
 
 
@@ -178,30 +192,30 @@
     @yield('title')
     <!-- Main content -->
         <section class="content2" style="background: #ecf0f5 !important;">
-                
-                
+
+
             @yield('contenido')
         </section><!-- /.content -->
 
-     
+
     </div><!-- /.content-wrapper -->
      <!-- Jquery JS-->
-   
-    
+
+
      <!-- Bootstrap JS-->
      <script src="{{url('administration/js/jquery-3.2.1.min.js')}}"></script>
      <script src="{{url('administration/js/popper.min.js')}}"></script>
      <script src="{{url('administration/js/bootstrap.min.js')}}"></script>
 
 
-     
+
     <script src="{{url('administration/plugins/moment.min.js')}}"></script>
     <script src="{{url('administration/plugins/daterangepicker/daterangepicker.js')}}"></script>
     <script src="{{url('administration/plugins/datepicker/bootstrap-datepicker.js')}}"></script>
     <script src="{{url('administration/plugins/timepicker/bootstrap-timepicker.js')}}"></script>
     <script src="{{url('administration/plugins/slimScroll/jquery.slimscroll.min.js')}}"></script>
     <script src="{{url('administration/plugins/chartjs/Chart.min.js')}}"></script>
-    
+
     <script src="{{url('administration/dist/js/validaNumerosLetras.js')}}"></script>
     <script src="{{url('administration/dist/js/app.js')}}"></script>
     <script src="{{url('administration/dist/js/sweetalert.min.js')}}"></script>
@@ -216,20 +230,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
 
 
-   
+
 
 
     <script type="text/javascript">
 
-    
-   
-        $(window).on('load', function(){ 
+
+
+        $(window).on('load', function(){
             $(".loader").fadeOut("slow");
 
         });
 
         </script>
-        
+
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -240,11 +254,11 @@
 
         function myFunction() {
                 $(".loader").show();
-           
+
             }
 
-  
-       
+
+
     </script>
 
 

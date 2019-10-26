@@ -17,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'id', 'name', 'email', 'password', 'apellidos', 'cedula', 'path', 'estado', 'edad'
     ];
 
     /**
@@ -38,7 +38,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-  
+
     public function sendPasswordResetNotification($token)
     {
      $this->notify(new MiResetPasswordPersonalizado($token));
